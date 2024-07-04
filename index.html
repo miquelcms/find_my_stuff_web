@@ -4,37 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miquel CMS Apps</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .bg-soft-blue {
+            background-color: #6c757d; /* Tono de azul más suave */
+        }
+        .text-soft-blue {
+            color: #6c757d;
+        }
+    </style>
 </head>
 <body>
-    <header>
+    <header class="bg-soft-blue text-white text-center py-4">
         <h1>Miquel CMS Apps</h1>
     </header>
-    <main>
+    <main class="container my-4">
         <section id="apps">
-            <h2>My Applications</h2>
-            <ul>
-                <li>
-                    <h3>Find My Stuff</h3>
-                    <p>A home inventory app to help you organize and manage your belongings.</p>
-                    <a href="https://play.google.com/store/apps/details?id=com.miquelcms.homeorganizer">Learn more</a>
-                </li>
-                <li>
-                    <h3>Plantybar - Vegan alcohol</h3>
-                    <p>quickly locate vegan alcoholic beverages such as beer, wine, cider, and spirits stored in the barnivore.com database.</p>
-                    <a href="https://play.google.com/store/apps/details?id=com.miquelcms.vegandrinks">Learn more</a>
-                </li>
-                <li>
-                    <h3>Type and Speak - My Speaker</h3>
-                    <p>transform text into speech (realistic male and female voices) for everything you write, or speech into text for everything you say.</p>
-                    <a href="https://play.google.com/store/apps/details?id=com.miquelcms.tts">Learn more</a>
-                </li>
-            </ul>
+            <h2 class="text-soft-blue">My Applications</h2>
+            <div class="list-group">
+                <a href="https://play.google.com/store/apps/details?id=com.miquelcms.homeorganizer" class="list-group-item list-group-item-action">
+                    <h3 class="mb-1">Find My Stuff</h3>
+                    <p class="mb-1">A home inventory app to help you organize and manage your belongings.</p>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.miquelcms.vegandrinks" class="list-group-item list-group-item-action">
+                    <h3 class="mb-1">Plantybar - Vegan alcohol</h3>
+                    <p class="mb-1">Quickly locate vegan alcoholic beverages such as beer, wine, cider, and spirits stored in the barnivore.com database.</p>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.miquelcms.myspeaker" class="list-group-item list-group-item-action">
+                    <h3 class="mb-1">Type and Speak - My Speaker</h3>
+                    <p class="mb-1">Transform text into speech (realistic male and female voices) for everything you write, or speech into text for everything you say.</p>
+                </a>
+            </div>
         </section>
     </main>
-    <footer>
+    <footer class="bg-soft-blue text-white text-center py-3">
         <p>&copy; 2024 Miquel CMS. All rights reserved.</p>
-        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="privacy-policy.html" class="text-white">Privacy Policy</a>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

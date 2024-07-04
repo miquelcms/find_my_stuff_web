@@ -4,17 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find My Stuff</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .bg-soft-blue {
+            background-color: #6c757d; /* Tono de azul más suave */
+        }
+        .text-soft-blue {
+            color: #6c757d;
+        }
+        .parallax {
+            /* Configuración del efecto parallax */
+            background-image: url('res/logo1024x500.png');
+            height: 500px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        .parallax h1 {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Oscurecer la imagen de fondo */
+        }
+        .content {
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Find My Stuff</h1>
+    <header class="parallax">
+        <div class="overlay"></div>
+        <div class="container h-100 d-flex justify-content-center align-items-center position-relative">
+            <h1 class="text-white">Find My Stuff</h1>
+        </div>
     </header>
-    <main>
+    <main class="container my-4 content">
         <section id="about">
-            <h2>About Find My Stuff</h2>
+            <h2 class="text-soft-blue">About Find My Stuff</h2>
             <p>Find My Stuff is a home inventory app designed to help you organize and manage your belongings efficiently.</p>
-            <h2>Key Features</h2>
+            <h2 class="text-soft-blue">Key Features</h2>
             <ul>
                 <li>Organize items and spaces within your home.</li>
                 <li>Create and manage containers and sub-containers.</li>
@@ -22,17 +57,20 @@
                 <li>Integration with Google Drive for secure backups.</li>
                 <li>Access your inventory across multiple devices.</li>
             </ul>
-            <h2>Google Drive Integration</h2>
+            <h2 class="text-soft-blue">Google Drive Integration</h2>
             <p>The integration with Google Drive allows you to save and restore backups of your inventory directly to your Google account, ensuring your data is always safe and accessible.</p>
-            <h2>Privacy Policy</h2>
+            <h2 class="text-soft-blue">Privacy Policy</h2>
             <p>We value your privacy. You can read our full privacy policy <a href="privacy-policy.html">here</a>.</p>
-            <h2>Contact Us</h2>
+            <h2 class="text-soft-blue">Contact Us</h2>
             <p>If you have any questions or suggestions, feel free to contact us at <a href="mailto:miquel.cms@gmail.com">miquel.cms@gmail.com</a>.</p>
         </section>
     </main>
-    <footer>
+    <footer class="bg-soft-blue text-white text-center py-3">
         <p>&copy; 2024 Miquel CMS. All rights reserved.</p>
-        <a href="index.html">Home</a>
+        <a href="index.html" class="text-white">Home</a>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
