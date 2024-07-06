@@ -20,21 +20,61 @@
     </header>
     <main class="container my-4">
         <section id="privacy-policy">
-            <p>Your privacy is important to us. This privacy policy explains how "Find My Stuff" collects, uses, and protects your information.</p>
-            <h2 class="text-soft-blue">Information We Collect</h2>
-            <p>We collect information through Google Analytics and when you log in with Google Drive API. This may include:</p>
+            <p>Welcome to Find my stuff. This privacy policy explains how personal data is used when the app is in use.</p>
+
+            <h2 class="text-soft-blue">Collected Information</h2>
+            <p>The following permissions are requested:</p>
             <ul>
-                <li>Google Analytics data for app usage statistics.</li>
-                <li>Email, name, and surname when logging in with Google Drive API.</li>
+                <li>
+                    <strong>Email Address (`.../auth/userinfo.email`)</strong>
+                    <ul>
+                        <li><strong>Purpose:</strong> To display the primary Google Account email address as confirmation that the login was successful.</li>
+                        <li><strong>Usage:</strong> This email address is not stored or used in any other way.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Profile Information (`.../auth/userinfo.profile`)</strong>
+                    <ul>
+                        <li><strong>Purpose:</strong> To display personal information for a more personalized user experience.</li>
+                        <li><strong>Usage:</strong> This information is not stored or used in any other way beyond enhancing the user experience within the app.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Google Drive Configuration Data (`.../auth/drive.appdata`)</strong>
+                    <ul>
+                        <li><strong>Purpose:</strong> To view, create, and delete configuration data within Google Drive.</li>
+                        <li><strong>Usage:</strong> This is used to store and retrieve app backups.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Google Drive File Access (`.../auth/drive.file`)</strong>
+                    <ul>
+                        <li><strong>Purpose:</strong> To view, edit, create, and delete specific files within Google Drive that are used with this app.</li>
+                        <li><strong>Usage:</strong> This is used to manage app backups and check total and free space in the Google Drive account to help manage storage.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Firebase Analytics and Crashlytics</strong>
+                    <ul>
+                        <li><strong>Purpose:</strong> To register app crashes and collect usage statistics.</li>
+                        <li><strong>Usage:</strong> Firebase Analytics is used to monitor app usage such as the number of active users, devices, and their locations. Information on device brands, models, and Android versions is also collected. Firebase Crashlytics is used to report app crashes and improve app stability. No specific personal information is collected, and the data is not sold to third parties.</li>
+                    </ul>
+                </li>
             </ul>
-            <h2 class="text-soft-blue">How We Use Your Information</h2>
-            <p>We use this information to provide and improve our services. We do not share your information with third parties except as required by law.</p>
-            <h2 class="text-soft-blue">Security</h2>
-            <p>We take reasonable measures to protect your information from unauthorized access, alteration, or destruction.</p>
-            <h2 class="text-soft-blue">Changes to This Privacy Policy</h2>
-            <p>We may update this privacy policy from time to time. We will notify you of any changes by posting the new privacy policy on this page.</p>
-            <h2 class="text-soft-blue">Contact Us</h2>
-            <p>If you have any questions about this privacy policy, please contact us at <a href="mailto:miquel.cms@gmail.com">miquel.cms@gmail.com</a>.</p>
+        
+            <h2 class="text-soft-blue">Data Usage</h2>
+            <ul>
+                <li><strong>Email Address:</strong> Displayed as confirmation of successful login. Not stored or used further.</li>
+                <li><strong>Profile Information:</strong> Used for a personalized experience. Not stored or used further.</li>
+                <li><strong>Google Drive Data:</strong> Used to manage app backups and storage space.</li>
+                <li><strong>Firebase Data:</strong> Used to monitor app usage and report crashes. No specific personal information is collected, and the data is not sold.</li>
+            </ul>
+        
+            <h2 class="text-soft-blue">No Other Data Collection</h2>
+            <p>No other personal data is retrieved, stored, or used by Find my stuff.</p>
+        
+            <h2 class="text-soft-blue">Contact</h2>
+            <p>If there are any questions about this privacy policy, please contact <a href="mailto:miquel.cms@gmail.com">miquel.cms@gmail.com</a>.</p>    
         </section>
     </main>
     <footer class="bg-soft-blue text-white text-center py-3">
